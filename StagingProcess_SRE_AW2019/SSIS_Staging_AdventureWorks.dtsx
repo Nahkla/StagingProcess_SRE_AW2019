@@ -11,8 +11,8 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{FD5104E1-BB2F-4E5F-AC0A-A43433098E78}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{00F96081-6735-49D9-9FA3-F172EF578EAB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxVUVPSIPUEucLvHwSx+F0wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACZiFBX7TYcznucEgK4pkIDmRc27/fxm6x13UnbwH2QiAAAAAAOgAAAAAIAACAAAAB+3KNGScz6JdpobgIy5iH6thtMV8UD6mY4a1hsvIJf9TAAAACGnfCFB9+dsGlVcL+f6SYVrL77jEEsxvz0uJxRkfkrHdw/p6F+2RUjyr+CJxAJDlZAAAAA/7At4GDtC1uQOyCDlk2+5bLR4kQL8FIbhbu5yZoDkNloywKV1fTgWIGxcyeqpx82iRxF8XCQmJf5UlPrSFCOow</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxVUVPSIPUEucLvHwSx+F0wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACA60PJlErSCkQKJb3FbthreAUWNpFYx8eB9ntF6KJnnwAAAAAOgAAAAAIAACAAAAChZwOGJEpR4b4XcmZAwlnfPWDisHL9dIqr0u1N7kcKqjAAAADgJexsjTeGgbcXmSks6/MBXD2cqwnbdj5Yt96LBKrxTvKRH+nbwd9C0P+rwUS6ML1AAAAAtG98tHgNFgGH9ZRHuLDC5Yf+D9+pPH9T9u1DkK+Di3b42KlnF3w7y/58cLCt7HxKPTeN2542Yh62u6fwt0TJxA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxVUVPSIPUEucLvHwSx+F0wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAANb7SK0Xud0ISc3RRtWkKT/+b4xaDXmit9UzJ6FT49TQAAAAAOgAAAAAIAACAAAAAcbwbEV3EtDmCzl4FhGmt9UHirE6NS1oE4PreoIxZ4qDAAAADN6haTUY1Ft7x/OuIdkNB7f8tUhqUTSk02RfWYtY/GWYFDNw7mZA8tmk48YBllnwlAAAAAgkFPZQjQC1OvdjPP5dyVeqe8sprXc8V+fsLsvqzwiFUos4WR0JvQbLrNX/IrOHRsYgoNP5h0n5zj02qe21lIOg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxVUVPSIPUEucLvHwSx+F0wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABklp3Fd7VA8YFYXfoE/V9Bjr6RCQ2PodrRFajkmjRFuAAAAAAOgAAAAAIAACAAAAB/LEDDJWcOP9lAPCJnwb1YDEENzYct2STGRqnQ5eLr9zAAAADDebCIWs6yRYO2RETcPAh178HfLTkKRh70QvxViHK2vzVkjLH8pvZpGQQa3Zdg6NpAAAAA5c4SVyBL3LD0DrbeCHu7ObLROex7oJ9VacAEF3DdCTZv/ZcuwtkNnt7fQXAUVmv+F5ajRFfWqNkUYksBVdTUYA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -533,7 +533,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE PersonAddress"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2180,7 +2180,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE ProductionProduct"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2196,7 +2196,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE ProductionProductCategory"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2212,7 +2212,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE ProductionProductSubcategory"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5521,7 +5521,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesCustomer"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5537,7 +5537,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesOrderDetail"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="6">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5553,7 +5553,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesOrderHeader"
-              DTS:ThreadHint="6">
+              DTS:ThreadHint="7">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5569,7 +5569,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesPerson"
-              DTS:ThreadHint="7">
+              DTS:ThreadHint="8">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5585,7 +5585,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesStore"
-              DTS:ThreadHint="8">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5679,25 +5679,25 @@
         <NodeLayout
           Size="230,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress"
-          TopLeft="96.0000000000001,161.6" />
+          TopLeft="41.5,107.5" />
         <NodeLayout
           Size="302,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\TRUNCATE TABLE PersonAddress"
-          TopLeft="60,60" />
+          TopLeft="5.5,5.5" />
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData.PrecedenceConstraints[Constraint 1]"
-          TopLeft="210.8,101.6">
+          TopLeft="156.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.5000000000001">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5000000000001" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5709,48 +5709,48 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="381,259"
-          Size="381,302"
+          PanelSize="313,204"
+          Size="313,248"
           Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData"
-          TopLeft="1836,263" />
+          TopLeft="5.5,5.5" />
         <NodeLayout
           Size="187,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProduct"
-          TopLeft="403.7,107.1" />
+          TopLeft="41.5,107.5" />
         <NodeLayout
           Size="230,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProductCategory"
-          TopLeft="41.5,107.1" />
+          TopLeft="361,107.5" />
         <NodeLayout
           Size="246,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProductSubcategory"
-          TopLeft="723.5,107.1" />
+          TopLeft="724,107.5" />
         <NodeLayout
           Size="259,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\TRUNCATE TABLE ProductionProduct"
-          TopLeft="367.7,5.49999999999995" />
+          TopLeft="5.5,5.5" />
         <NodeLayout
           Size="302,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\TRUNCATE TABLE ProductionProductCategory"
-          TopLeft="5.49999999999994,5.50000000000007" />
+          TopLeft="325,5.49999999999989" />
         <NodeLayout
           Size="318,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\TRUNCATE TABLE ProductionProductSubcategory"
-          TopLeft="687.5,5.49999999999995" />
+          TopLeft="688,5.49999999999989" />
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData.PrecedenceConstraints[Constraint]"
-          TopLeft="497.3,47.1">
+          TopLeft="135,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.5000000000001">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5000000000001" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5761,18 +5761,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData.PrecedenceConstraints[Constraint 1]"
-          TopLeft="156.3,47.1000000000001">
+          TopLeft="476,47.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.5000000000001">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5000000000001" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5783,18 +5783,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData.PrecedenceConstraints[Constraint 2]"
-          TopLeft="846.3,47.1">
+          TopLeft="847,47.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.5000000000001">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5000000000001" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5806,61 +5806,61 @@
         <ContainerLayout
           HeaderHeight="43.2"
           IsExpanded="True"
-          PanelSize="1010,204"
-          Size="1010,247"
+          PanelSize="1012,204"
+          Size="1012,248"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData"
-          TopLeft="1832.5,5.4999999999998" />
+          TopLeft="379,5.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesCustomer"
-          TopLeft="354.5,107.1" />
+          TopLeft="41.5,107.5" />
         <NodeLayout
           Size="181,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesOrderDetail"
-          TopLeft="41.5000000000001,107.1" />
+          TopLeft="347.5,107.5" />
         <NodeLayout
           Size="188,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesOrderHeader"
-          TopLeft="1536.9,107.1" />
+          TopLeft="661,107.5" />
         <NodeLayout
           Size="161,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesPerson"
-          TopLeft="1243.5,107.1" />
+          TopLeft="981.5,107.5" />
         <NodeLayout
           Size="153,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesStore"
-          TopLeft="958.5,107.1" />
+          TopLeft="1275.5,107.5" />
         <NodeLayout
           Size="166,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesTerritory"
-          TopLeft="659.7,107.1" />
+          TopLeft="1561,107.5" />
         <NodeLayout
           Size="245,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesCustomer"
-          TopLeft="318.5,5.49999999999995" />
+          TopLeft="5.5,5.5" />
         <NodeLayout
           Size="253,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesOrderDetail"
-          TopLeft="5.50000000000009,5.50000000000007" />
+          TopLeft="311.5,5.49999999999989" />
         <NodeLayout
           Size="260,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesOrderHeader"
-          TopLeft="1500.9,5.49999999999984" />
+          TopLeft="625,5.49999999999989" />
         <NodeLayout
           Size="233,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesPerson"
-          TopLeft="1207.5,5.49999999999984" />
+          TopLeft="945.5,5.49999999999989" />
         <NodeLayout
           Size="225,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesStore"
-          TopLeft="922.5,5.49999999999995" />
+          TopLeft="1239.5,5.49999999999977" />
         <NodeLayout
           Size="238,42"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesTerritory"
-          TopLeft="623.7,5.49999999999995" />
+          TopLeft="1525,5.49999999999977" />
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData.PrecedenceConstraints[Constraint]"
-          TopLeft="131.9,47.1000000000001">
+          TopLeft="438,47.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5882,7 +5882,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData.PrecedenceConstraints[Constraint 1]"
-          TopLeft="440.9,47.1">
+          TopLeft="128,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5904,7 +5904,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData.PrecedenceConstraints[Constraint 2]"
-          TopLeft="742.9,47.1">
+          TopLeft="1644,47.4999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5926,7 +5926,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData.PrecedenceConstraints[Constraint 3]"
-          TopLeft="1034.9,47.1">
+          TopLeft="1352,47.4999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5948,7 +5948,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData.PrecedenceConstraints[Constraint 4]"
-          TopLeft="1323.9,47.0999999999998">
+          TopLeft="1062,47.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5970,7 +5970,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData.PrecedenceConstraints[Constraint 5]"
-          TopLeft="1630.9,47.0999999999998">
+          TopLeft="755,47.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5993,20 +5993,74 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="1766,204"
-          Size="1766,247"
+          PanelSize="1768,204"
+          Size="1768,248"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData"
-          TopLeft="5.49999999999977,5.49999999999997" />
+          TopLeft="1452,5.49999999999977" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="2848,620"
-          Size="2848,663"
+          PanelSize="3226,308"
+          Size="3226,352"
           Id="Package\LoadStagingTablesAdventureWorks"
-          TopLeft="5.5,5.49999999999989" />
+          TopLeft="5.5,5.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="189,42"
+          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress"
+          TopLeft="178.5,5.49999999999995" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress"
+          TopLeft="162.5,155.1" />
+        <EdgeLayout
+          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress.Paths[ADO NET Source Output]"
+          TopLeft="272.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,107.6"
+              Start="0,0"
+              End="0,100.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,100.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProduct">
     <LayoutInfo>
@@ -6493,60 +6547,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesTerritory\Staging_SR_SalesTerritory">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="189,42"
-          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress"
-          TopLeft="178.5,5.49999999999995" />
-        <NodeLayout
-          Size="219,42"
-          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress"
-          TopLeft="162.5,155.1" />
-        <EdgeLayout
-          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress.Paths[ADO NET Source Output]"
-          TopLeft="272.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,107.6"
-              Start="0,0"
-              End="0,100.1">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,100.1" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
