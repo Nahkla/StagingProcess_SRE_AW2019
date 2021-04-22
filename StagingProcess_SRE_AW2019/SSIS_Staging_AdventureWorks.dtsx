@@ -7,7 +7,7 @@
   DTS:CreatorName="INFORMATIONSFAB\sremme"
   DTS:DTSID="{9D78B7D1-5BC9-48EA-B9E2-CB3F1EC888B4}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.165"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxVUVPSIPUEucLvHwSx+F0wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACA60PJlErSCkQKJb3FbthreAUWNpFYx8eB9ntF6KJnnwAAAAAOgAAAAAIAACAAAAChZwOGJEpR4b4XcmZAwlnfPWDisHL9dIqr0u1N7kcKqjAAAADgJexsjTeGgbcXmSks6/MBXD2cqwnbdj5Yt96LBKrxTvKRH+nbwd9C0P+rwUS6ML1AAAAAtG98tHgNFgGH9ZRHuLDC5Yf+D9+pPH9T9u1DkK+Di3b42KlnF3w7y/58cLCt7HxKPTeN2542Yh62u6fwt0TJxA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+ql7HjY810avaWNNUoNkWAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADB4qUUnq8kivk2HxDgp3rZAAAAAASAAACgAAAAEAAAAC/LgjeWrN9kZoZr0jErOBkoAAAAKqilH6xhdghTRS/ad+VQtM6TpehDo9sA+4ql0HEysSOzOGmGwAdrbxQAAAB6N3fyG4UucNe68HMArXQEh03FWA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxVUVPSIPUEucLvHwSx+F0wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABklp3Fd7VA8YFYXfoE/V9Bjr6RCQ2PodrRFajkmjRFuAAAAAAOgAAAAAIAACAAAAB/LEDDJWcOP9lAPCJnwb1YDEENzYct2STGRqnQ5eLr9zAAAADDebCIWs6yRYO2RETcPAh178HfLTkKRh70QvxViHK2vzVkjLH8pvZpGQQa3Zdg6NpAAAAA5c4SVyBL3LD0DrbeCHu7ObLROex7oJ9VacAEF3DdCTZv/ZcuwtkNnt7fQXAUVmv+F5ajRFfWqNkUYksBVdTUYA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+ql7HjY810avaWNNUoNkWAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAMcj12LKGrEoaUwWcBpqpHAAAAAASAAACgAAAAEAAAAM0bDvTOM+wMC9cFzlIpYVkoAAAABmGEn+zwyiXhT6obzRN8sYgzC+ocPhM4VkgmT+321ZY7NLMvIbUt+RQAAACH5lMuDNGF4+iqptgeo1ah04ubnA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -60,498 +60,15 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData"
+          DTS:refId="Package\LoadStagingTablesAdventureWorks\Sequence Container"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Sequence Container"
           DTS:DTSID="{A142A0BF-8422-42AB-BFEC-3D01A9ECB5C8}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
-          DTS:ObjectName="StagingPersonData">
+          DTS:ObjectName="Sequence Container">
           <DTS:Variables />
-          <DTS:Executables>
-            <DTS:Executable
-              DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress"
-              DTS:CreationName="Microsoft.Pipeline"
-              DTS:Description="Datenflusstask"
-              DTS:DTSID="{c811fc7c-b987-4f54-a5ff-7ec3db080acc}"
-              DTS:ExecutableType="Microsoft.Pipeline"
-              DTS:LocaleID="-1"
-              DTS:ObjectName="LoadPersonAddress"
-              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-              <DTS:Variables />
-              <DTS:ObjectData>
-                <pipeline
-                  version="1">
-                  <components>
-                    <component
-                      refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress"
-                      componentClassID="Microsoft.ManagedComponentHost"
-                      contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                      description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
-                      name="SourcePersonAddress"
-                      usesDispositions="true"
-                      version="4">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the SQL statement used by the component to extract data."
-                          expressionType="Notify"
-                          name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                        <property
-                          dataType="System.Int32"
-                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                          name="CommandTimeout">30</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
-                          name="AllowImplicitStringConversion">true</property>
-                        <property
-                          dataType="System.String"
-                          description="The Source database table name."
-                          expressionType="Notify"
-                          name="TableOrViewName"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Person"."Address"</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specify the mode to retrieve external column information"
-                          name="AccessMode"
-                          typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
-                        <property
-                          dataType="System.String"
-                          name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
-                      </properties>
-                      <connections>
-                        <connection
-                          refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Connections[IDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[adv-srv.database.windows.net.AdventureWorks2019.adminuser]"
-                          connectionManagerRefId="Package.ConnectionManagers[adv-srv.database.windows.net.AdventureWorks2019.adminuser]"
-                          description="Managed connection manager"
-                          name="IDbConnection" />
-                      </connections>
-                      <outputs>
-                        <output
-                          refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output]"
-                          name="ADO NET Source Output">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressID]"
-                              dataType="i4"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[AddressID]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressID]"
-                              name="AddressID"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressLine1]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[AddressLine1]"
-                              length="60"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressLine1]"
-                              name="AddressLine1"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressLine2]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[AddressLine2]"
-                              length="60"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressLine2]"
-                              name="AddressLine2"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[City]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[City]"
-                              length="30"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[City]"
-                              name="City"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[StateProvinceID]"
-                              dataType="i4"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[StateProvinceID]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[StateProvinceID]"
-                              name="StateProvinceID"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[PostalCode]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[PostalCode]"
-                              length="15"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[PostalCode]"
-                              name="PostalCode"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[SpatialLocation]"
-                              dataType="image"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[SpatialLocation]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[SpatialLocation]"
-                              name="SpatialLocation"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[rowguid]"
-                              dataType="guid"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[rowguid]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[rowguid]"
-                              name="rowguid"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[ModifiedDate]"
-                              dataType="dbTimeStamp"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[ModifiedDate]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[ModifiedDate]"
-                              name="ModifiedDate"
-                              truncationRowDisposition="FailComponent" />
-                          </outputColumns>
-                          <externalMetadataColumns
-                            isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[AddressID]"
-                              dataType="i4"
-                              name="AddressID" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[AddressLine1]"
-                              dataType="wstr"
-                              length="60"
-                              name="AddressLine1" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[AddressLine2]"
-                              dataType="wstr"
-                              length="60"
-                              name="AddressLine2" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[City]"
-                              dataType="wstr"
-                              length="30"
-                              name="City" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[StateProvinceID]"
-                              dataType="i4"
-                              name="StateProvinceID" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[PostalCode]"
-                              dataType="wstr"
-                              length="15"
-                              name="PostalCode" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[SpatialLocation]"
-                              dataType="image"
-                              name="SpatialLocation" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[rowguid]"
-                              dataType="guid"
-                              name="rowguid" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].ExternalColumns[ModifiedDate]"
-                              dataType="dbTimeStamp"
-                              name="ModifiedDate" />
-                          </externalMetadataColumns>
-                        </output>
-                        <output
-                          refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output]"
-                          isErrorOut="true"
-                          name="ADO NET Source Error Output">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[AddressID]"
-                              dataType="i4"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[AddressID]"
-                              name="AddressID" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[AddressLine1]"
-                              dataType="wstr"
-                              length="60"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[AddressLine1]"
-                              name="AddressLine1" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[AddressLine2]"
-                              dataType="wstr"
-                              length="60"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[AddressLine2]"
-                              name="AddressLine2" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[City]"
-                              dataType="wstr"
-                              length="30"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[City]"
-                              name="City" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[StateProvinceID]"
-                              dataType="i4"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[StateProvinceID]"
-                              name="StateProvinceID" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[PostalCode]"
-                              dataType="wstr"
-                              length="15"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[PostalCode]"
-                              name="PostalCode" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[SpatialLocation]"
-                              dataType="image"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[SpatialLocation]"
-                              name="SpatialLocation" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[rowguid]"
-                              dataType="guid"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[rowguid]"
-                              name="rowguid" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[ModifiedDate]"
-                              dataType="dbTimeStamp"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[ModifiedDate]"
-                              name="ModifiedDate" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
-                              dataType="i4"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
-                              name="ErrorCode"
-                              specialFlags="1" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
-                              dataType="i4"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
-                              name="ErrorColumn"
-                              specialFlags="2" />
-                          </outputColumns>
-                          <externalMetadataColumns />
-                        </output>
-                      </outputs>
-                    </component>
-                    <component
-                      refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress"
-                      componentClassID="Microsoft.ManagedComponentHost"
-                      contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
-                      description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
-                      name="Staging_SR_PersonAddress"
-                      usesDispositions="true"
-                      version="2">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="The Destination database table name."
-                          expressionType="Notify"
-                          name="TableOrViewName"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Staging_SR_PersonAddress"</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
-                          expressionType="Notify"
-                          name="BatchSize">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
-                          expressionType="Notify"
-                          name="CommandTimeout">30</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
-                          expressionType="Notify"
-                          name="UseBulkInsertWhenPossible">true</property>
-                        <property
-                          dataType="System.String"
-                          name="UserComponentTypeName">Microsoft.ADONETDestination</property>
-                      </properties>
-                      <connections>
-                        <connection
-                          refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Connections[IDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[dp1-dataplatform.database.windows.net.sre-shr-dwh.adminuser]"
-                          connectionManagerRefId="Package.ConnectionManagers[dp1-dataplatform.database.windows.net.sre-shr-dwh.adminuser]"
-                          description="Managed connection manager"
-                          name="IDbConnection" />
-                      </connections>
-                      <inputs>
-                        <input
-                          refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input]"
-                          errorRowDisposition="FailComponent"
-                          hasSideEffects="true"
-                          name="ADO NET Destination Input">
-                          <inputColumns>
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[AddressID]"
-                              cachedDataType="i4"
-                              cachedName="AddressID"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[AddressID]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressID]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[AddressLine1]"
-                              cachedDataType="wstr"
-                              cachedLength="60"
-                              cachedName="AddressLine1"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[AddressLine1]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressLine1]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[AddressLine2]"
-                              cachedDataType="wstr"
-                              cachedLength="60"
-                              cachedName="AddressLine2"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[AddressLine2]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[AddressLine2]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[City]"
-                              cachedDataType="wstr"
-                              cachedLength="30"
-                              cachedName="City"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[City]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[City]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[StateProvinceID]"
-                              cachedDataType="i4"
-                              cachedName="StateProvinceID"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[StateProvinceID]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[StateProvinceID]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[PostalCode]"
-                              cachedDataType="wstr"
-                              cachedLength="15"
-                              cachedName="PostalCode"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[PostalCode]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[PostalCode]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[SpatialLocation]"
-                              cachedDataType="image"
-                              cachedName="SpatialLocation"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[SpatialLocation]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[SpatialLocation]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[rowguid]"
-                              cachedDataType="guid"
-                              cachedName="rowguid"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[rowguid]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[rowguid]" />
-                            <inputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].Columns[ModifiedDate]"
-                              cachedDataType="dbTimeStamp"
-                              cachedName="ModifiedDate"
-                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[ModifiedDate]"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output].Columns[ModifiedDate]" />
-                          </inputColumns>
-                          <externalMetadataColumns
-                            isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[AddressID]"
-                              dataType="i4"
-                              name="AddressID" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[AddressLine1]"
-                              dataType="wstr"
-                              length="60"
-                              name="AddressLine1" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[AddressLine2]"
-                              dataType="wstr"
-                              length="60"
-                              name="AddressLine2" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[City]"
-                              dataType="wstr"
-                              length="30"
-                              name="City" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[StateProvinceID]"
-                              dataType="i4"
-                              name="StateProvinceID" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[PostalCode]"
-                              dataType="wstr"
-                              length="15"
-                              name="PostalCode" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[SpatialLocation]"
-                              dataType="bytes"
-                              length="2147483647"
-                              name="SpatialLocation" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[rowguid]"
-                              dataType="guid"
-                              name="rowguid" />
-                            <externalMetadataColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input].ExternalColumns[ModifiedDate]"
-                              dataType="dbTimeStamp"
-                              name="ModifiedDate" />
-                          </externalMetadataColumns>
-                        </input>
-                      </inputs>
-                      <outputs>
-                        <output
-                          refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Outputs[ADO NET Destination Error Output]"
-                          exclusionGroup="1"
-                          isErrorOut="true"
-                          name="ADO NET Destination Error Output"
-                          synchronousInputId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input]">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
-                              dataType="i4"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
-                              name="ErrorCode"
-                              specialFlags="1" />
-                            <outputColumn
-                              refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
-                              dataType="i4"
-                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
-                              name="ErrorColumn"
-                              specialFlags="2" />
-                          </outputColumns>
-                          <externalMetadataColumns />
-                        </output>
-                      </outputs>
-                    </component>
-                  </components>
-                  <paths>
-                    <path
-                      refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress.Paths[ADO NET Source Output]"
-                      endId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress.Inputs[ADO NET Destination Input]"
-                      name="ADO NET Source Output"
-                      startId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress.Outputs[ADO NET Source Output]" />
-                  </paths>
-                </pipeline>
-              </DTS:ObjectData>
-            </DTS:Executable>
-            <DTS:Executable
-              DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData\TRUNCATE TABLE PersonAddress"
-              DTS:CreationName="Microsoft.ExecuteSQLTask"
-              DTS:Description="Execute SQL Task"
-              DTS:DTSID="{e79d81f3-e31f-4c58-aae1-c8adaef720ff}"
-              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-              DTS:LocaleID="-1"
-              DTS:ObjectName="TRUNCATE TABLE PersonAddress"
-              DTS:ThreadHint="0">
-              <DTS:Variables />
-              <DTS:ObjectData>
-                <SQLTask:SqlTaskData
-                  SQLTask:Connection="{BC412433-9A9F-42B3-9169-24C5B1E98C95}"
-                  SQLTask:SqlStatementSource="TRUNCATE TABLE [Staging_SR_PersonAddress]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-              </DTS:ObjectData>
-            </DTS:Executable>
-          </DTS:Executables>
-          <DTS:PrecedenceConstraints>
-            <DTS:PrecedenceConstraint
-              DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPersonData.PrecedenceConstraints[Constraint 1]"
-              DTS:CreationName=""
-              DTS:DTSID="{632f8af3-e1e9-4c86-b089-3c6870e54ce2}"
-              DTS:From="Package\LoadStagingTablesAdventureWorks\StagingPersonData\TRUNCATE TABLE PersonAddress"
-              DTS:LogicalAnd="True"
-              DTS:ObjectName="Constraint 1"
-              DTS:To="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress" />
-          </DTS:PrecedenceConstraints>
+          <DTS:Executables />
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingProductData"
@@ -2180,7 +1697,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE ProductionProduct"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2196,7 +1713,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE ProductionProductCategory"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2246,6 +1763,466 @@
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 2"
               DTS:To="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProductSubcategory" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Sequence Container"
+          DTS:DTSID="{0E0BBB5B-49B2-4E9A-A608-530B2B7B64C1}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="StagingPurchasingData">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Datenflusstask"
+              DTS:DTSID="{a04c99fd-a363-4f2c-86f3-d4351e24ae7f}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="LoadPurchasingVendor"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor"
+                      componentClassID="Microsoft.ManagedComponentHost"
+                      contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+                      name="SourcePurchasingVendor"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the SQL statement used by the component to extract data."
+                          expressionType="Notify"
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">30</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                          name="AllowImplicitStringConversion">true</property>
+                        <property
+                          dataType="System.String"
+                          description="The Source database table name."
+                          expressionType="Notify"
+                          name="TableOrViewName"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Purchasing"."Vendor"</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specify the mode to retrieve external column information"
+                          name="AccessMode"
+                          typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                        <property
+                          dataType="System.String"
+                          name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Connections[IDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[adv-srv.database.windows.net.AdventureWorks2019.adminuser]"
+                          connectionManagerRefId="Package.ConnectionManagers[adv-srv.database.windows.net.AdventureWorks2019.adminuser]"
+                          description="Managed connection manager"
+                          name="IDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output]"
+                          name="ADO NET Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[BusinessEntityID]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[BusinessEntityID]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[BusinessEntityID]"
+                              name="BusinessEntityID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[AccountNumber]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[AccountNumber]"
+                              length="15"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[AccountNumber]"
+                              name="AccountNumber"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[Name]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[Name]"
+                              length="50"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[Name]"
+                              name="Name"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[CreditRating]"
+                              dataType="ui1"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[CreditRating]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[CreditRating]"
+                              name="CreditRating"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[PreferredVendorStatus]"
+                              dataType="bool"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[PreferredVendorStatus]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[PreferredVendorStatus]"
+                              name="PreferredVendorStatus"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[ActiveFlag]"
+                              dataType="bool"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[ActiveFlag]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[ActiveFlag]"
+                              name="ActiveFlag"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[PurchasingWebServiceURL]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[PurchasingWebServiceURL]"
+                              length="1024"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[PurchasingWebServiceURL]"
+                              name="PurchasingWebServiceURL"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[ModifiedDate]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[ModifiedDate]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[ModifiedDate]"
+                              name="ModifiedDate"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[BusinessEntityID]"
+                              dataType="i4"
+                              name="BusinessEntityID" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[AccountNumber]"
+                              dataType="wstr"
+                              length="15"
+                              name="AccountNumber" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[Name]"
+                              dataType="wstr"
+                              length="50"
+                              name="Name" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[CreditRating]"
+                              dataType="ui1"
+                              name="CreditRating" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[PreferredVendorStatus]"
+                              dataType="bool"
+                              name="PreferredVendorStatus" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[ActiveFlag]"
+                              dataType="bool"
+                              name="ActiveFlag" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[PurchasingWebServiceURL]"
+                              dataType="wstr"
+                              length="1024"
+                              name="PurchasingWebServiceURL" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].ExternalColumns[ModifiedDate]"
+                              dataType="dbTimeStamp"
+                              name="ModifiedDate" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output]"
+                          isErrorOut="true"
+                          name="ADO NET Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[BusinessEntityID]"
+                              dataType="i4"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[BusinessEntityID]"
+                              name="BusinessEntityID" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[AccountNumber]"
+                              dataType="wstr"
+                              length="15"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[AccountNumber]"
+                              name="AccountNumber" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[Name]"
+                              dataType="wstr"
+                              length="50"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[Name]"
+                              name="Name" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[CreditRating]"
+                              dataType="ui1"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[CreditRating]"
+                              name="CreditRating" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[PreferredVendorStatus]"
+                              dataType="bool"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[PreferredVendorStatus]"
+                              name="PreferredVendorStatus" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ActiveFlag]"
+                              dataType="bool"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ActiveFlag]"
+                              name="ActiveFlag" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[PurchasingWebServiceURL]"
+                              dataType="wstr"
+                              length="1024"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[PurchasingWebServiceURL]"
+                              name="PurchasingWebServiceURL" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ModifiedDate]"
+                              dataType="dbTimeStamp"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ModifiedDate]"
+                              name="ModifiedDate" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor"
+                      componentClassID="Microsoft.ManagedComponentHost"
+                      contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                      description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                      name="Staging_SR_Vendor"
+                      usesDispositions="true"
+                      version="2">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The Destination database table name."
+                          expressionType="Notify"
+                          name="TableOrViewName"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Staging_SR_Vendor"</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                          expressionType="Notify"
+                          name="BatchSize">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                          expressionType="Notify"
+                          name="CommandTimeout">30</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                          expressionType="Notify"
+                          name="UseBulkInsertWhenPossible">true</property>
+                        <property
+                          dataType="System.String"
+                          name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Connections[IDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[dp1-dataplatform.database.windows.net.sre-shr-dwh.adminuser]"
+                          connectionManagerRefId="Package.ConnectionManagers[dp1-dataplatform.database.windows.net.sre-shr-dwh.adminuser]"
+                          description="Managed connection manager"
+                          name="IDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input]"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="ADO NET Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[BusinessEntityID]"
+                              cachedDataType="i4"
+                              cachedName="BusinessEntityID"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[BusinessEntityID]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[BusinessEntityID]" />
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[AccountNumber]"
+                              cachedDataType="wstr"
+                              cachedLength="15"
+                              cachedName="AccountNumber"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[AccountNumber]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[AccountNumber]" />
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[Name]"
+                              cachedDataType="wstr"
+                              cachedLength="50"
+                              cachedName="Name"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[Name]" />
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[CreditRating]"
+                              cachedDataType="ui1"
+                              cachedName="CreditRating"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[CreditRating]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[CreditRating]" />
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[PreferredVendorStatus]"
+                              cachedDataType="bool"
+                              cachedName="PreferredVendorStatus"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[PreferredVendorStatus]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[PreferredVendorStatus]" />
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[ActiveFlag]"
+                              cachedDataType="bool"
+                              cachedName="ActiveFlag"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[ActiveFlag]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[ActiveFlag]" />
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[PurchasingWebServiceURL]"
+                              cachedDataType="wstr"
+                              cachedLength="1024"
+                              cachedName="PurchasingWebServiceURL"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[PurchasingWebServiceURL]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[PurchasingWebServiceURL]" />
+                            <inputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].Columns[ModifiedDate]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="ModifiedDate"
+                              externalMetadataColumnId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[ModifiedDate]"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output].Columns[ModifiedDate]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[BusinessEntityID]"
+                              dataType="i4"
+                              name="BusinessEntityID" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[AccountNumber]"
+                              dataType="wstr"
+                              length="15"
+                              name="AccountNumber" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                              dataType="wstr"
+                              length="50"
+                              name="Name" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[CreditRating]"
+                              dataType="ui1"
+                              name="CreditRating" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[PreferredVendorStatus]"
+                              dataType="bool"
+                              name="PreferredVendorStatus" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[ActiveFlag]"
+                              dataType="bool"
+                              name="ActiveFlag" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[PurchasingWebServiceURL]"
+                              dataType="wstr"
+                              length="1024"
+                              name="PurchasingWebServiceURL" />
+                            <externalMetadataColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input].ExternalColumns[ModifiedDate]"
+                              dataType="dbTimeStamp"
+                              name="ModifiedDate" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Outputs[ADO NET Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="ADO NET Destination Error Output"
+                          synchronousInputId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor.Paths[ADO NET Source Output]"
+                      endId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\Staging_SR_Vendor.Inputs[ADO NET Destination Input]"
+                      name="ADO NET Source Output"
+                      startId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor\SourcePurchasingVendor.Outputs[ADO NET Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\TRUNCATE TABLE PurchasingVendor"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{54e9b66e-5512-4d5f-9bd9-ebf2e16da9f9}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="TRUNCATE TABLE PurchasingVendor"
+              DTS:ThreadHint="2">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{BC412433-9A9F-42B3-9169-24C5B1E98C95}"
+                  SQLTask:SqlStatementSource="TRUNCATE TABLE [Staging_SR_PurchasingVendor]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData.PrecedenceConstraints[Constraint 1]"
+              DTS:CreationName=""
+              DTS:DTSID="{929f4a79-1a52-41bb-b0e8-a48537108858}"
+              DTS:From="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\TRUNCATE TABLE PurchasingVendor"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint 1"
+              DTS:To="Package\LoadStagingTablesAdventureWorks\StagingPurchasingData\LoadPurchasingVendor" />
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
         <DTS:Executable
@@ -5521,7 +5498,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesCustomer"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5537,7 +5514,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesOrderDetail"
-              DTS:ThreadHint="6">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5585,7 +5562,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesStore"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5601,7 +5578,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="TRUNCATE TABLE SalesTerritory"
-              DTS:ThreadHint="9">
+              DTS:ThreadHint="8">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5675,66 +5652,29 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="230,42"
-          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress"
-          TopLeft="41.5,107.5" />
-        <NodeLayout
-          Size="302,42"
-          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\TRUNCATE TABLE PersonAddress"
-          TopLeft="5.5,5.5" />
-        <EdgeLayout
-          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData.PrecedenceConstraints[Constraint 1]"
-          TopLeft="156.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="313,204"
-          Size="313,248"
-          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData"
-          TopLeft="5.5,5.5" />
-        <NodeLayout
-          Size="187,42"
+          Size="187.2,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProduct"
           TopLeft="41.5,107.5" />
         <NodeLayout
-          Size="230,42"
+          Size="230.4,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProductCategory"
           TopLeft="361,107.5" />
         <NodeLayout
-          Size="246,42"
+          Size="246.4,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\LoadProductionProductSubcategory"
           TopLeft="724,107.5" />
         <NodeLayout
-          Size="259,42"
+          Size="259.2,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\TRUNCATE TABLE ProductionProduct"
           TopLeft="5.5,5.5" />
         <NodeLayout
-          Size="302,42"
+          Size="302.4,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\TRUNCATE TABLE ProductionProductCategory"
           TopLeft="325,5.49999999999989" />
         <NodeLayout
-          Size="318,42"
+          Size="318.4,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData\TRUNCATE TABLE ProductionProductSubcategory"
           TopLeft="688,5.49999999999989" />
         <EdgeLayout
@@ -5811,51 +5751,51 @@
           Id="Package\LoadStagingTablesAdventureWorks\StagingProductData"
           TopLeft="379,5.5" />
         <NodeLayout
-          Size="173,42"
+          Size="172.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesCustomer"
           TopLeft="41.5,107.5" />
         <NodeLayout
-          Size="181,42"
+          Size="180.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesOrderDetail"
           TopLeft="347.5,107.5" />
         <NodeLayout
-          Size="188,42"
+          Size="188,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesOrderHeader"
           TopLeft="661,107.5" />
         <NodeLayout
-          Size="161,42"
+          Size="160.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesPerson"
           TopLeft="981.5,107.5" />
         <NodeLayout
-          Size="153,42"
+          Size="152.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesStore"
           TopLeft="1275.5,107.5" />
         <NodeLayout
-          Size="166,42"
+          Size="166.4,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesTerritory"
           TopLeft="1561,107.5" />
         <NodeLayout
-          Size="245,42"
+          Size="244.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesCustomer"
           TopLeft="5.5,5.5" />
         <NodeLayout
-          Size="253,42"
+          Size="252.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesOrderDetail"
           TopLeft="311.5,5.49999999999989" />
         <NodeLayout
-          Size="260,42"
+          Size="260,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesOrderHeader"
           TopLeft="625,5.49999999999989" />
         <NodeLayout
-          Size="233,42"
+          Size="232.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesPerson"
           TopLeft="945.5,5.49999999999989" />
         <NodeLayout
-          Size="225,42"
+          Size="224.8,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesStore"
           TopLeft="1239.5,5.49999999999977" />
         <NodeLayout
-          Size="238,42"
+          Size="238.4,41.6"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData\TRUNCATE TABLE SalesTerritory"
           TopLeft="1525,5.49999999999977" />
         <EdgeLayout
@@ -5996,12 +5936,19 @@
           PanelSize="1768,204"
           Size="1768,248"
           Id="Package\LoadStagingTablesAdventureWorks\StagingSalesData"
-          TopLeft="1452,5.49999999999977" />
+          TopLeft="5.49999999999977,5.49999999999997" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="3226,308"
-          Size="3226,352"
+          PanelSize="381,229"
+          Size="381,272"
+          Id="Package\LoadStagingTablesAdventureWorks\Sequence Container"
+          TopLeft="1836,263" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="2848,590"
+          Size="2848,633"
           Id="Package\LoadStagingTablesAdventureWorks"
           TopLeft="5.5,5.5" />
       </GraphLayout>
@@ -6547,6 +6494,60 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\LoadStagingTablesAdventureWorks\StagingSalesData\LoadSalesTerritory\Staging_SR_SalesTerritory">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="189,42"
+          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress"
+          TopLeft="178.5,5.49999999999995" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress"
+          TopLeft="162.5,155.1" />
+        <EdgeLayout
+          Id="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress.Paths[ADO NET Source Output]"
+          TopLeft="272.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,107.6"
+              Start="0,0"
+              End="0,100.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,100.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\SourcePersonAddress">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\LoadStagingTablesAdventureWorks\StagingPersonData\LoadPersonAddress\Staging_SR_PersonAddress">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
